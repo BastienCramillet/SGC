@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<musics>
+	<music id="musique carte 1" description="Musique jouée en fond sur la première carte" url="somePrettySong.ogg" />
+</musics>

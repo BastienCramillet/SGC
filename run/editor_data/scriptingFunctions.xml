@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fonctions>
+
+	<Personnage>
+		<fonction signature="getX() : int" />
+		<fonction signature="getY() : int" />
+		<fonction signature="jump() : void" />
+		<fonction signature="moveLeft() : void" />
+		<fonction signature="moveRight() : void" />
+	</Personnage>
+
+	<Decor>
+		<fonction signature="getX() : int" />
+		<fonction signature="getY() : int" />
+		<fonction signature="contient(x:int, y:int) : nil ou 1" />
+		<fonction signature="appliquerForce(forceX:float, forceY:float) : void" />
+	</Decor>
+
+	<Zone>
+		<fonction signature="contient(x:int, y:int) : nil ou 1" />
+	</Zone>
+	
+	<infoGui>
+		<fonction signature="afficher(str:texte)" />
+		<fonction signature="setVisible(v:int)"/>
+	</infoGui>
+	
+</fonctions>
+

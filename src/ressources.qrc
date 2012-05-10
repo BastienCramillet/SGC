@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ressources/autocompetion.api</file>
+        <file>ressources/charger.png</file>
+        <file>ressources/nouveau.png</file>
+        <file>ressources/sauvegarder.png</file>
+        <file>ressources/run.png</file>
+        <file>ressources/depart.jpg</file>
+        <file>ressources/splashs/step-1.png</file>
+        <file>ressources/splashs/step-2.png</file>
+        <file>ressources/splashs/step-3.png</file>
+        <file>ressources/splashs/step-4.png</file>
+        <file>ressources/splashs/step-5.png</file>
+    </qresource>
+</RCC>

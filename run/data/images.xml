@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<images>
+	<image id="caisse 1" description="caisse modèle 1" width="100" height="100" rowCount="1" columnCount="1" isOneShotAnim="false" fps="24" url="interactions/caisse_1.png" isRectangular="true">
+		<point x="-50" y="-50"/>
+		<point x="50" y="-50"/>
+		<point x="50" y="50"/>
+		<point x="-50" y="50"/>
+	</image>
+	<image id="caisse 2" description="caisse modèle 2" width="100" height="100" rowCount="1" columnCount="1" isOneShotAnim="false" fps="24" url="interactions/caisse_2.png" isRectangular="true">
+		<point x="-50" y="-50"/>
+		<point x="50" y="-50"/>
+		<point x="50" y="50"/>
+		<point x="-50" y="50"/>
+	</image>
+	<image id="camion UPS" description="ça arrivera quand ça arrivera" width="300" height="200" rowCount="1" columnCount="1" isOneShotAnim="false" fps="24" url="decorations/camion.png" isRectangular="false">
+		<point x="-241" y="-143"/>
+		<point x="41" y="-136"/>
+		<point x="248" y="47"/>
+		<point x="257" y="115"/>
+		<point x="-253" y="112"/>
+	</image>
+	<image id="explosion" description="Un tileset d'explosion" width="100" height="100" rowCount="2" columnCount="14" isOneShotAnim="true" fps="24" url="ephemerals/tile_explosion.png" isRectangular="true">
+		<point x="-50" y="-50"/>
+		<point x="50" y="-50"/>
+		<point x="50" y="50"/>
+		<point x="-50" y="50"/>
+	</image>
+	<image id="monstre avec bombe droite" description="quand votre coeur fait boum boum (à droite)" width="100" height="200" rowCount="2" columnCount="77" isOneShotAnim="false" fps="24" url="characters/tile_mechant.png" isRectangular="true">
+		<point x="-48" y="-103"/>
+		<point x="48" y="-103"/>
+		<point x="48" y="104"/>
+		<point x="-48" y="104"/>
+	</image>
+	<image id="trottoire" description="Un simple trotoire" width="300" height="20" rowCount="1" columnCount="1" isOneShotAnim="false" fps="24" url="interactions/trottoire.png" isRectangular="true">
+		<point x="-150" y="-10"/>
+		<point x="150" y="-10"/>
+		<point x="-150" y="10"/>
+		<point x="150" y="10"/>
+	</image>
+	<image id="panneau" description="Un panneau enjoy" width="200" height="200" rowCount="1" columnCount="1" isOneShotAnim="false" fps="24" url="decorations/panneau.png" isRectangular="true">
+		<point x="-100" y="-100"/>
+		<point x="100" y="-100"/>
+		<point x="100" y="100"/>
+		<point x="-100" y="100"/>
+	</image>
+</images>

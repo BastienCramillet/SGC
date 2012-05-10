@@ -1,0 +1,54 @@
+<!DOCTYPE CARTE>
+<map width="2400" height="1000" name="Carte de démonstration">
+ <editorsData>
+  <layouts>
+   <layout id="-6" name="zones"/>
+   <layout id="-5" name="Caisse bloquantes"/>
+   <layout id="-4" name="chutte caisses"/>
+   <layout id="-3" name="monstres"/>
+   <layout id="-2" name="decors"/>
+   <layout id="-1" name="sol"/>
+  </layouts>
+ </editorsData>
+ <load>
+  <objects>
+   <object id="grand monstre avec bombe"/>
+   <object id="panneau"/>
+   <object id="caisse"/>
+   <object id="trottoire"/>
+   <object id="petit monstre avec bombe"/>
+  </objects>
+  <musics/>
+ </load>
+ <items>
+  <objects>
+   <object isOnBackground="false" x="250" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1150" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="50" y="750" rotation="0" isDestructible="false" resistance="1" layout="-5" id="caisse" imageOnCreateID="caisse 2" isMovable="true" density="10000" name="" friction="1"/>
+   <object isOnBackground="false" x="1010" y="370" rotation="-30" isDestructible="false" resistance="1" layout="-4" id="caisse" imageOnCreateID="caisse 2" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1450" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1513" y="126" rotation="0" isDestructible="true" resistance="100" layout="-3" id="grand monstre avec bombe" imageOnCreateID="monstre avec bombe droite" isMovable="true" density="100" name="big monster" friction="1"/>
+   <object isOnBackground="false" x="2350" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="850" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="50" y="550" rotation="0" isDestructible="false" resistance="1" layout="-5" id="caisse" imageOnCreateID="caisse 2" isMovable="true" density="10000" name="" friction="1"/>
+   <object isOnBackground="false" x="1750" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1550" y="490" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="big monster ground" friction="1"/>
+   <object isOnBackground="false" x="870" y="310" rotation="30" isDestructible="false" resistance="1" layout="-4" id="caisse" imageOnCreateID="caisse 1" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1150" y="330" rotation="-10" isDestructible="false" resistance="1" layout="-4" id="caisse" imageOnCreateID="caisse 1" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="true" x="1940" y="700" rotation="0" isDestructible="false" resistance="1" layout="-2" id="panneau" imageOnCreateID="panneau" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="50" y="450" rotation="0" isDestructible="false" resistance="1" layout="-5" id="caisse" imageOnCreateID="caisse 1" isMovable="true" density="10000" name="" friction="1"/>
+   <object isOnBackground="false" x="367" y="683" rotation="0" isDestructible="true" resistance="100" layout="-3" id="petit monstre avec bombe" imageOnCreateID="monstre avec bombe droite" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="1050" y="250" rotation="20" isDestructible="false" resistance="1" layout="-4" id="caisse" imageOnCreateID="caisse 1" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="2050" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="930" y="170" rotation="0" isDestructible="false" resistance="1" layout="-5" id="caisse" imageOnCreateID="caisse 2" isMovable="true" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="50" y="650" rotation="0" isDestructible="false" resistance="1" layout="-5" id="caisse" imageOnCreateID="caisse 1" isMovable="true" density="10000" name="" friction="1"/>
+   <object isOnBackground="false" x="550" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+   <object isOnBackground="false" x="-50" y="810" rotation="0" isDestructible="false" resistance="1" layout="-1" id="trottoire" imageOnCreateID="trottoire" isMovable="false" density="1" name="" friction="1"/>
+  </objects>
+  <areas>
+   <area width="20" x="680" y="460" description="Zone de départ" height="20" layout="-6" name="" color="#ff0000"/>
+   <area width="200" x="2080" y="600" description="Zone de fin" height="200" layout="-6" name="" color="#00ff00"/>
+   <area width="400" x="1500" y="400" description="Une zone transparente (ou pas)" height="400" layout="-6" name="" color="#0000ff"/>
+  </areas>
+ </items>
+</map>

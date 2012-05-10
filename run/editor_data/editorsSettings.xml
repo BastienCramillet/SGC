@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+
+	<triggers>
+		<trigger name="onCreate"/>
+		<trigger name="onDestroy"/>
+		<trigger name="onMoveLeft"/>
+		<trigger name="onMoveRight"/>
+	</triggers>
+
+	<editorsDecorsCategories>
+		<category name="Interactifs"/>
+		<category name="Element décoratif"/>
+		<category name="Décors complets"/>
+	</editorsDecorsCategories>
+
+	<editorsCharactersCategories>
+		<category name="Monstres basiques"/>
+		<category name="Boss"/>
+	</editorsCharactersCategories>
+
+	<gameCharacteresType>
+		<type name="monstre"/>
+	</gameCharacteresType>
+
+	<gameDecorsType>
+		<type name="simple"/>
+	</gameDecorsType>
+
+	<executables>
+		<exe os="windows" value="../v0-build-desktop/v0.exe"/>
+		<exe os="linux" value="../v0.1.6/v0"/>
+	</executables>
+
+	<areas width="200" height="200" color="#AAAAAA">
+		<area color="#FF0000" name="Zone de départ" width="20" height="20" />
+		<area color="#00FF00" name="Zone de fin" width="200" height="200" />
+		<area color="#0000FF" name="Une zone transparente (ou pas)" width="400" height="400" />
+	</areas>
+
+</settings>

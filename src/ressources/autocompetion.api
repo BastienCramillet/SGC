@@ -1,0 +1,14 @@
+monstres[
+heros[
+decors[
+zones[
+getX
+getY
+jump
+moveLeft
+moveRight
+contient
+appliquerForce
+infoGui
+setVisible
+afficher

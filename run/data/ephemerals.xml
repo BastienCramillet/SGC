@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ephemerals>
+	<ephemeral id="explosion 100" description="Une explosion de taille 100*100" width="100" height="100">
+		<images>
+			<image triggered="onCreate" id="explosion" />
+		</images>
+		<sounds>
+			<sound triggered="onCreate" id="explosion" />
+		</sounds>
+		<ephemerals />
+	</ephemeral>
+	<ephemeral id="explosion 200" description="Une explosion de taille 200*200" width="200" height="200">
+		<images>
+			<image triggered="onCreate" id="explosion" />
+		</images>
+		<sounds>
+			<sound triggered="onCreate" id="explosion" />
+		</sounds>
+		<ephemerals />
+	</ephemeral>
+</ephemerals>
+
+<!--
+J'ai bien réfléchi, le mieux est de calculer les points de collisions dans le jeu à partir des données du xml d'image.
+Du coup on peut retrouver les valeurs avec un simple proportionnalité entre la taille de l'image (ou d'une image du tileset).
+L'avantage c'est que si on change l'image, on a pas besoin de regénérer le fichier xml des éphémères !
+
+La formule serait un truc du genre (je pense je suis pas loin, et c'est le jeu qui calculera ça s'il doit charger l'éphémère) :
+nouveauPoint = Point( largeur/image.largeur * ancienPoint.x, hauteur/image.hauteur * ancienPoint.y )
+-->

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+	Détails :
+		editorCategory 	: catégorie sous laquelle sera placée l'objet dans l'éditeur
+		gameClass	   	: une info pour le jeu, de quelle super classe sera l'objet (décor ou perso pour l'instant)
+		gameFactoryInfo : une info pour la fabrique qui sera implémenté dans le jeu. Au final, ça donnera, j'ai besoin d'un perso (appel factoryPerso) et de type monstre (monstre étant le gameFactoryInfo)
+
+	Au passage je défini les noms de gameClass :
+		- decor
+		- character
+
+	Pour les noms des sous classes on verra, de toute façon pour l'instant ça n'a pas d'importance
+
+	Evenements :
+		- onCreate 	: à la création de l'objet
+		- onDestroy	: à la destruction de l'objet
+
+		On peut imaginer par la suite ajouter plein de nouveaux déclencheurs, et même des avec des conditions !
+
+		+ pour un perso :
+		- onMoveLeft : quand le perso va sur la gauche
+		- onMoveRight : quand le perso va sur la droite
+		- onJumpLeft : quand le perso saute en étant tourné sur la gauche
+		- onJumpRight : quand le perso saute en étant tourné sur la droite
+
+		// et c'est tout, pas de question d'attaque car on a pas de notion d'équipement associé à un objet, du moins pas encore !
+		// plus tard, il suffira d'ajouter une balise <items> dans les perso qui comprendra leur inventaires par défaut (enfin là je me projète loin dans le futur)
+-->
+<objects>
+	<objet id="caisse" description="Une caisse" width="100" height="100" editorCategory="Interactifs" gameClass="decor" gameFactoryInfo="" isDestructible="false" isOnBackground="false" resistance="1" isMovable="true" density="1" friction="1">
+		<images>
+			<image triggered="onCreate" id="caisse 1"/>	<!-- un random -->
+			<image triggered="onCreate" id="caisse 2"/>
+		</images>
+		<sounds />
+		<ephemerals />
+	</objet>
+	<objet id="petit monstre avec bombe" description="Un petit monstre avec bombe" width="95" height="206" editorCategory="Monstres basiques" gameClass="character" gameFactoryInfo="monster" isDestructible="true" isOnBackground="false" resistance="100" isMovable="true" density="1" friction="1">
+		<images>
+			<image triggered="onCreate" id="monstre avec bombe droite"/>
+			<image triggered="onMoveRight" id="monstre avec bombe droite"/>
+			<image triggered="onMoveLeft" id="monstre avec bombe droite"/>
+		</images>
+		<sounds>
+			<sound triggered="onMoveLeft" id="bruits de pas" />
+			<sound triggered="onMoveRight" id="bruits de pas" />
+		</sounds>
+		<ephemerals>
+			<ephemeral triggered="onDestroy" id="explosion 100" />
+		</ephemerals>
+	</objet>
+	<objet id="grand monstre avec bombe" description="Un gros monstre avec bombe" width="186" height="412" editorCategory="Monstres basiques" gameClass="character" gameFactoryInfo="monster" isDestructible="true" isOnBackground="false" resistance="100" isMovable="true" density="1" friction="1">
+		<images>
+			<image triggered="onCreate" id="monstre avec bombe droite"/>
+			<image triggered="onMoveRight" id="monstre avec bombe droite"/>
+			<image triggered="onMoveLeft" id="monstre avec bombe droite"/>
+		</images>
+		<sounds>
+			<sound triggered="onMoveLeft" id="bruits de pas" />
+			<sound triggered="onMoveRight" id="bruits de pas" />
+		</sounds>
+		<ephemerals>
+			<ephemeral triggered="onDestroy" id="explosion 200" />
+		</ephemerals>
+	</objet>
+	<objet id="trottoire" description="Un simple trottoire" width="300" height="20" editorCategory="Interactifs" gameClass="decor" gameFactoryInfo="" isDestructible="false" isOnBackground="false" resistance="1" isMovable="false" density="1" friction="1">
+		<images>
+			<image triggered="onCreate" id="trottoire"/>
+		</images>
+		<sounds />
+		<ephemerals />
+	</objet>
+	<objet id="panneau" description="Un panneau enjoy" width="200" height="200" editorCategory="Element décoratif" gameClass="decor" gameFactoryInfo="" isDestructible="false" isOnBackground="true" resistance="1" isMovable="false" density="1" friction="1">
+		<images>
+			<image triggered="onCreate" id="panneau"/>
+		</images>
+		<sounds />
+		<ephemerals />
+	</objet>
+</objects>
