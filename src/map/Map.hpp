@@ -24,12 +24,13 @@
 #define MAP_HPP
 
 #include "constantes.hpp"
+#include <QGraphicsView>
+#include <QSet>
 
 class MapEditor;
 class GraphicsObject;
 class ObjectInspectorTable;
 class MiniMapView;
-
 
 const int GRID_SPACE = 20;  // espacement entre deux lignes/deux colonnes de la grille
 

@@ -28,6 +28,8 @@
 #include "MapArea.hpp"
 #include "ObjectInspectorTable.hpp"
 
+#include <QFormLayout>
+
 
 MapAreaEdit::MapAreaEdit(Map *map) : m_map(map) {
 

@@ -26,9 +26,12 @@
 #include "constantes.hpp"
 
 #include <QtGui>
-#include <Qsci/qsciscintilla.h>
+#include <QApplication>
+#include <QTextCodec>
 
-int main(int argc, char** argv) {
+//#include <Qsci/qsciscintilla.h>
+
+int main(int argc, char *argv[]) {
 
     //*
     std::ofstream file("logs.txt");
@@ -43,8 +46,8 @@ int main(int argc, char** argv) {
     Q_INIT_RESOURCE(ressources);
 
     // encodage des fichiers
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
-    QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
+//    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
+//    QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
 
     MapEditor mapEditor;
     mapEditor.showMaximized();

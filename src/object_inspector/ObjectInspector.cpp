@@ -25,6 +25,10 @@
 #include "MapEditor.hpp"
 #include "ObjectInspectorTable.hpp"
 
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QSplitter>
+
 ObjectInspector::ObjectInspector(Map *map, MapEditor *parent)
     : QDockWidget(parent), m_map(map), m_graphicsObjectEditor(map), m_mapAreaEditor(map)
 {

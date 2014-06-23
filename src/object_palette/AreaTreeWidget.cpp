@@ -25,6 +25,7 @@
 #include "AreaTreeWidgetItem.hpp"
 
 #include "Settings.hpp"
+#include <QHeaderView>
 
 AreaTreeWidget::AreaTreeWidget() {
     header()->hide();

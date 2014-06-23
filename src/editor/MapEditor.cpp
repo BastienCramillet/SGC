@@ -31,6 +31,13 @@
 
 #include "Settings.hpp"
 
+#include <QAction>
+#include <QMenu>
+#include <QToolBar>
+#include <QMenuBar>
+#include <QFileDialog>
+#include <QMessageBox>
+
 MapEditor::MapEditor() : m_saveName("") {
 
     Log::v("editor") << "Création de l'éditeur";
@@ -49,8 +56,8 @@ MapEditor::MapEditor() : m_saveName("") {
     // zone de scripting
     Log::v("editor") << "Création de la zone de scripting";
     loadingSplash.setCurrentStep(SCRIPTING);
-    m_scriptingArea = new ScriptingArea(this);
-    addDockWidget(Qt::BottomDockWidgetArea, m_scriptingArea);
+    //m_scriptingArea = new ScriptingArea(this);
+    //addDockWidget(Qt::BottomDockWidgetArea, m_scriptingArea);
 
     // inspecteur d'objets
     Log::v("editor") << "Création de l'inspecteur d'objets";
@@ -123,19 +130,19 @@ void MapEditor::createMenuAndToolBar() {
     QAction *showPaletteAction = new QAction("&Palette", this);
     showPaletteAction->setCheckable(true);
     showPaletteAction->setChecked(true);
-    connect(showPaletteAction, SIGNAL(toggled(bool)), m_objectPalette, SLOT(setShown(bool)));
+    connect(showPaletteAction, SIGNAL(toggled(bool)), m_objectPalette, SLOT(show()));
     connect(m_objectPalette, SIGNAL(visibilityChanged(bool)), showPaletteAction, SLOT(setChecked(bool)));
 
     QAction *showScriptingAction = new QAction("&Script", this);
     showScriptingAction->setCheckable(true);
     showScriptingAction->setChecked(true);
-    connect(showScriptingAction, SIGNAL(toggled(bool)), m_scriptingArea, SLOT(setShown(bool)));
-    connect(m_scriptingArea, SIGNAL(visibilityChanged(bool)), showScriptingAction, SLOT(setChecked(bool)));
+    //connect(showScriptingAction, SIGNAL(toggled(bool)), m_scriptingArea, SLOT(show()));
+    //connect(m_scriptingArea, SIGNAL(visibilityChanged(bool)), showScriptingAction, SLOT(setChecked(bool)));
 
     QAction *showObjectInspector = new QAction("&Inspecteur d'objets", this);
     showObjectInspector->setCheckable(true);
     showObjectInspector->setChecked(true);
-    connect(showObjectInspector, SIGNAL(toggled(bool)), m_objectInspector, SLOT(setShown(bool)));
+    connect(showObjectInspector, SIGNAL(toggled(bool)), m_objectInspector, SLOT(show()));
     connect(m_objectInspector, SIGNAL(visibilityChanged(bool)), showObjectInspector, SLOT(setChecked(bool)));
 
     /*

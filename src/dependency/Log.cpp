@@ -35,7 +35,7 @@ Log::Log()
     m_logLabels[DEBUG]   = "[d] ";
     m_logLabels[INFO]    = "[i] ";
     m_logLabels[WARNING] = "[w] ";
-    m_logLabels[ERROR]   = "[e] ";
+    m_logLabels[ERRORS]   = "[e] ";
 }
 
 

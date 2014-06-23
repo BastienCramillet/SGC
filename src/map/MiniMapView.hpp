@@ -25,6 +25,8 @@
 
 #include "constantes.hpp"
 
+#include <QGraphicsView>
+
 class Map;
 
 const int miniMapViewSize = 200;

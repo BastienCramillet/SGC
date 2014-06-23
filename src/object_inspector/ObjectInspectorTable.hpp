@@ -26,6 +26,7 @@
 #include "constantes.hpp"
 
 #include "GraphicsObject.hpp"
+#include <QTreeWidget>
 
 class ObjectInspector;
 class Map;

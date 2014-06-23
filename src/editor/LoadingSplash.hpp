@@ -25,6 +25,8 @@
 
 #include "constantes.hpp"
 
+#include <QSplashScreen>
+
 /*!
     \enum LoadingSplashStep
     \brief Les différentes étapes du chargement

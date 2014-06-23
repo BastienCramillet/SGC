@@ -27,6 +27,8 @@
 
 #include "GraphicsObject.hpp"
 
+#include <QTreeWidgetItem>
+
 /*!
     \class ObjectTreeWidgetItem
     \brief Un objet d'un arbre qui représente un objet que l'on peut placer sur la carte

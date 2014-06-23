@@ -26,6 +26,11 @@
 
 #include "MapEditor.hpp"
 
+#include <QTreeWidget>
+#include <QTreeWidgetItem>
+#include <QHBoxLayout>
+#include <QSplitter>
+
 ScriptingArea::ScriptingArea(MapEditor *parent) : QDockWidget(parent) {
 
     setWindowTitle("Zone de scripting");

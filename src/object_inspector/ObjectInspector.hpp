@@ -30,6 +30,9 @@
 #include "MapObjectEdit.hpp"
 #include "MapAreaEdit.hpp"
 
+#include <QStackedWidget>
+#include <QDockWidget>
+
 class MapEditor;
 class GraphicsObject;
 class Map;

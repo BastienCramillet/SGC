@@ -25,6 +25,10 @@
 
 #include "constantes.hpp"
 
+#include <QLineEdit>
+#include <QSpinBox>
+#include <QGroupBox>
+
 class Map;
 class MapArea;
 class ObjectInspectorTable;

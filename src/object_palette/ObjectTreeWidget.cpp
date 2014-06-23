@@ -26,6 +26,8 @@
 
 #include "ObjectManager.hpp"
 
+#include <QHeaderView>
+
 
 ObjectTreeWidget::ObjectTreeWidget() {
     header()->hide();

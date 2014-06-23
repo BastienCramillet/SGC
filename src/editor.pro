@@ -3,7 +3,7 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET =
+TARGET = editor
 DEPENDPATH += . \
               dependency \
               editor \
@@ -21,9 +21,11 @@ INCLUDEPATH += . \
                map \
                scripting \
                object_palette \
-               object_inspector
+               object_inspector \
+               F:/Developpement/QScintilla-gpl-2.8.2/Qt4Qt5
 
-QT += xml
+QT += core gui widgets xml
+
 LIBS += -lqscintilla2
 
 

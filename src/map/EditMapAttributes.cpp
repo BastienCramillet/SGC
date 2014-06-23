@@ -25,6 +25,10 @@
 
 #include "Map.hpp"
 
+#include <QFormLayout>
+#include <QPushButton>
+#include <QHBoxLayout>
+
 EditMapAttributes::EditMapAttributes(Map *map, QWidget *parent)
     : QDialog(parent), m_map(map) {
 

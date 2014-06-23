@@ -39,6 +39,9 @@
 
 #include "ObjectManager.hpp"
 
+#include <QMouseEvent>
+#include <QMessageBox>
+
 
 Map::Map(MapEditor *parent)
     : QGraphicsView(parent), m_width(800), m_height(600), m_parent(parent),
@@ -162,11 +165,11 @@ void Map::mousePressEvent(QMouseEvent *event) {
             if ( m_parent->getObjectPalette()->selectedObjectType() == MAP_OBJECT ) {
                 QString objectID = m_parent->getObjectPalette()->selectedObjectID();
                 ObjectData *objectData = ObjectManager::getObjectData(objectID);
-                newObject = new MapObject(objectID, mapToScene(event->posF().toPoint()).toPoint() - QPoint(objectData->width/2, objectData->height/2));
+                newObject = new MapObject(objectID, mapToScene(event->pos()).toPoint() - QPoint(objectData->width/2, objectData->height/2));
             }
             else if ( m_parent->getObjectPalette()->selectedObjectType() == MAP_AREA ) {
                 AreasData datas = m_parent->getObjectPalette()->selectedAreaDatas();
-                newObject = new MapArea(datas, mapToScene(event->posF().toPoint()).toPoint() - QPoint(datas.size.width()/2, datas.size.height()/2));
+                newObject = new MapArea(datas, mapToScene(event->pos()).toPoint() - QPoint(datas.size.width()/2, datas.size.height()/2));
             }
             else {
                 Log::e("Map::mousePressEvent") << "Type d'objet selectionné invalide";

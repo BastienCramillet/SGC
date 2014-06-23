@@ -34,6 +34,8 @@
 #include "Map.hpp"
 #include "MiniMapView.hpp"
 
+#include <QVBoxLayout>
+
 
 ObjectPalette::ObjectPalette(Map *map, MapEditor *parent)
     : QDockWidget(parent)

@@ -24,6 +24,7 @@
 #define EDITOR_HPP
 
 #include "constantes.hpp"
+#include <QMainWindow>
 
 class Map;
 class ScriptingArea;

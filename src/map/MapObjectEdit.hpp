@@ -24,6 +24,10 @@
 #define MAPOBJECTEDIT_HPP
 
 #include "constantes.hpp"
+#include <QLineEdit>
+#include <QSpinBox>
+#include <QGroupBox>
+#include <QCheckBox>
 
 class Map;
 class MapObject;

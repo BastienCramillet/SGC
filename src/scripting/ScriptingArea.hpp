@@ -24,6 +24,7 @@
 #define SCRIPTINGAREA_HPP
 
 #include "constantes.hpp"
+#include <QDockWidget>
 
 #include <Qsci/qsciscintilla.h>
 #include <Qsci/qscilexerlua.h>

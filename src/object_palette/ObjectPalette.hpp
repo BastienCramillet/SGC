@@ -31,7 +31,7 @@
 #include "AreaTreeWidget.hpp"
 
 #include "AreasData.hpp"
-
+#include <QDockWidget>
 
 class Map;
 class MapEditor;

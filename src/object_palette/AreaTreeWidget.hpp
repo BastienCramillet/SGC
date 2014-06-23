@@ -25,6 +25,8 @@
 
 #include "constantes.hpp"
 
+#include <QTreeWidget>
+
 /*!
     \class AreaTreeWidget
     \brief Un arbre qui va contenir des objets plaçable sur la carte

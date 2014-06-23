@@ -24,6 +24,9 @@
 #define EDITMAPATTRIBUTES_HPP
 
 #include "constantes.hpp"
+#include <QDialog>
+#include <QLineEdit>
+#include <QSpinBox>
 
 class Map;
 

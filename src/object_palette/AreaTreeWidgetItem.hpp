@@ -27,6 +27,8 @@
 
 #include "Settings.hpp"
 
+#include <QTreeWidgetItem>
+
 /*!
     \class AreaTreeWidgetItem
     \brief Un objet d'un arbre qui représente une zone que l'on peut placer sur la carte

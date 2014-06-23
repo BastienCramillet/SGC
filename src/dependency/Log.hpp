@@ -96,7 +96,7 @@ enum LogLevel {
     DEBUG,
     INFO,
     WARNING,
-    ERROR
+    ERRORS
 };
 
 
@@ -214,7 +214,7 @@ public :
         \brief Nouvelle ligne de log en error
     */
     static inline LogLine e(const std::string &tag = "") {
-        return LogLine(ERROR, tag);
+        return LogLine(ERRORS, tag);
     }
 
 

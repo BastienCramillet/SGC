@@ -24,6 +24,7 @@
 #define OBJECTTREEWIDGET_HPP
 
 #include "constantes.hpp"
+#include <QTreeWidget>
 
 /*!
     \class ObjectTreeWidget

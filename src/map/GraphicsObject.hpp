@@ -24,7 +24,7 @@
 #define GRAPHICSOBJECT_HPP
 
 #include "constantes.hpp"
-
+#include <QGraphicsPixmapItem>
 
 /*!
     \enum GraphicsObjectType

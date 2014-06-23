@@ -26,6 +26,7 @@
 
 #include <QtGui>
 #include <QtCore>
+#include <QWidget>
 
 
 #include "Log.hpp"

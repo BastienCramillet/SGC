@@ -28,6 +28,8 @@
 #include "MapObject.hpp"
 #include "ObjectInspectorTable.hpp"
 
+#include <QFormLayout>
+
 
 MapObjectEdit::MapObjectEdit(Map *map)
     : m_map(map), m_currentObject(0), m_objectInspectorTable(0)

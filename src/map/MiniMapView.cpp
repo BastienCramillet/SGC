@@ -23,6 +23,7 @@
 #include "MiniMapView.hpp"
 
 #include "Map.hpp"
+#include <QScrollBar>
 
 MiniMapView::MiniMapView(Map *map)
     : m_map(map), m_factor(0)
@@ -55,7 +56,7 @@ void MiniMapView::rescaleView() {
 
 void MiniMapView::mousePressEvent(QMouseEvent *event) {
     QGraphicsView::mousePressEvent(event);
-    QPointF realPoint = mapToScene(event->posF().toPoint());
+    QPointF realPoint = mapToScene(event->pos()).toPoint();
     Log::i("MiniMapView") << "pressEvent, at" << realPoint.x() << realPoint.y();
     m_map->centerOn(realPoint);
 }
